@@ -1,0 +1,332 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f9f7f4;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header {
+  color: #a14867;
+  padding: 150px 0;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.6),
+      rgba(255, 255, 255, 0.9)
+    ),
+    url("./images/leaves.jpg");
+}
+
+header h1 {
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 30px 0 0 0;
+}
+
+header h2 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h3 {
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  line-height: 1;
+  margin: 0;
+}
+
+header a {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  padding: 16px 32px;
+  text-decoration: none;
+  background: #c06f8c;
+  margin-top: 32px;
+  display: inline-block;
+}
+
+footer {
+  /* background-repeat: no-repeat; */
+  background-size: cover;
+  background-image: linear-gradient(
+      rgba(249, 247, 244, 0.92),
+      rgba(249, 247, 244, 0.9)
+    ),
+    url("./images/leaves.jpg");
+  background-size: 500px;
+  background-position-y: bottom;
+}
+
+footer h3 {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+footer p {
+  color: #a14867;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: #c06f8c;
+}
+
+main {
+  background-color: #e5deda;
+}
+
+main h2 {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #a14867;
+  margin: 0;
+}
+
+main h3 {
+  font-size: 20px;
+  line-height: 1.5;
+  color: black;
+  margin-top: 8px;
+}
+
+.about-me-container a {
+  color: #a14867;
+}
+
+.about-me-container a:hover {
+  color: #c06f8c;
+}
+
+section {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 30px;
+}
+
+section.my-portfolio-container {
+  background-color: #f9f7f4;
+}
+
+section.my-portfolio-container h4 {
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.forward-container {
+  text-align: center;
+  margin: 40px;
+}
+
+.forward-container h3 {
+  font-size: 32px;
+}
+
+.forward-container a {
+  background: #15aabf;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  padding: 20px 34px;
+  text-decoration: none;
+  margin: 5px;
+  display: inline-block;
+}
+
+.forward-container a:hover {
+  opacity: 0.7;
+  transition: all 180ms ease-in-out;
+}
+
+.my-portfolio-container h2 {
+  margin: 50px 0 0 50px;
+}
+
+.my-portfolio-container h3 {
+  margin: 0 0 50px 50px;
+}
+
+/* CREATE A LINE BELOW THE TEXT USING ::AFTER*/
+.my-portfolio-container h3::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 2px;
+  background-color: black;
+  margin-top: 30px;
+}
+
+.about-me-center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns-my-projects {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.grid-projects img {
+  margin: 0 auto;
+  display: block;
+  max-width: 300px;
+  height: auto;
+}
+
+.project-title {
+  text-decoration: none;
+  color: black;
+}
+
+.project-title:hover {
+  text-decoration: none;
+  color: #af2858;
+}
+
+.grid-4-columns-footer {
+  grid-template-columns: auto 800px auto auto;
+  grid-gap: 0;
+}
+
+.footer-section li {
+  list-style: none;
+  padding: 0;
+  margin-right: 40px;
+  font-size: 30px;
+  display: inline;
+}
+
+.footer-section .shecodes-icon {
+  margin-right: 0;
+}
+
+.footer-section ul {
+  margin-left: 40px;
+  padding: 0;
+}
+
+.footer-section p {
+  text-align: left;
+  padding-top: 5px;
+  font-size: 18px;
+}
+
+.footer-section a {
+  text-decoration: none;
+  color: #15aabf;
+}
+
+.footer-section h3 {
+  color: #15aabf;
+  padding-top: 5px;
+  display: flex;
+  justify-content: right;
+  font-size: 18px;
+}
+
+.footer-section h2 {
+  margin-left: 30px;
+  text-align: center;
+}
+
+.project-img {
+  max-width: 90%;
+  max-height: 90%;
+  object-fit: cover;
+}
+
+.about-me-container {
+  padding: 100px 50px 0 50px;
+}
+
+.img-woman-coding {
+  max-width: 350px;
+  border-radius: 50%;
+  transition: all 180ms ease-in-out;
+}
+
+.img-woman-coding:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+/* MEDIA QUERY */
+@media (max-width: 960px) {
+  header {
+    padding: 60px 0;
+  }
+
+  header h1 {
+    font-size: 48px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 12px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    grid-gap: 32px;
+  }
+
+  section {
+    padding: 30px 0;
+  }
+}
