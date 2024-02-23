@@ -324,20 +324,115 @@ section.my-portfolio-container h4 {
   }
 
   header h1 {
-    font-size: 48px;
+    font-size: 38px;
   }
 
   header h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   header h3 {
+    font-size: 14px;
+  }
+
+  header a {
     font-size: 12px;
+    padding: 10px 22px;
+  }
+
+  main h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  main h3 {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .about-me-container {
+    padding: 26px;
+    text-align: center;
+  }
+
+  .about-me-container a {
+    font-size: 12px;
+  }
+
+  .img-woman-coding {
+    max-width: 200px;
+  }
+
+  .my-portfolio-container h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+  }
+
+  .my-portfolio-container h3 {
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 30px;
+    padding: 20px 0 30px 0;
+  }
+
+  .my-portfolio-container h3::after {
+    content: none;
+  }
+
+  .grid-projects img {
+    max-width: 250px;
+  }
+
+  section.my-portfolio-container h4 {
+    font-size: 14px;
+    margin: 10px 0;
+  }
+
+  .forward-container h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+  }
+
+  .forward-container h3 {
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    padding: 20px 0 30px 0;
+  }
+
+  .forward-container a {
+    font-size: 12px;
+    padding: 10px 22px;
+  }
+
+  .footer-section p {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+  }
+
+  .footer-section h3 {
+    padding: 0;
+    font-size: 16px;
+    margin: 0 auto;
+  }
+
+  .footer-section h2 {
+    display: none;
+  }
+
+  .footer-section ul {
+    margin: 0 auto;
+    padding: 0;
   }
 
   .grid {
     grid-template-columns: 1fr;
-    grid-gap: 32px;
+    grid-gap: 12px;
   }
 
   section {
