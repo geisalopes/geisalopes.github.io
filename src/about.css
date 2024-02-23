@@ -280,7 +280,7 @@ footer a {
   color: #c06f8c;
 }
 
-.back-home-container a {
+.back-home-button a {
   background: #15aabf;
   color: white;
   display: inline-block;
@@ -389,8 +389,8 @@ footer a {
     padding: 20px 0;
   }
 
-  .back-home-container a {
-    margin: 20px auto;
+  .back-home-button a {
+    margin: 50px auto;
     font-size: 12px;
     padding: 10px 22px;
   }
