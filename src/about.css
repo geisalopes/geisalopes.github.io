@@ -493,36 +493,5 @@ footer a {
     grid-template-columns: 1fr;
     grid-gap: 12px;
   }
-
-  /* section {
-    padding: 30px 0;
-  } */
 }
 
-/* OLD MEDIA QUERY */
-/* @media (max-width: 960px) {
-  header {
-    padding: 60px 0;
-  }
-
-  header h1 {
-    font-size: 48px;
-  }
-
-  header h2 {
-    font-size: 20px;
-  }
-
-  header h3 {
-    font-size: 12px;
-  }
-
-  .grid {
-    grid-template-columns: 1fr;
-    grid-gap: 32px;
-  }
-
-  section {
-    padding: 30px 0;
-  }
-} */
