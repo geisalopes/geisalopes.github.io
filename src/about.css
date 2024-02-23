@@ -494,10 +494,10 @@ footer a {
     grid-gap: 12px;
   }
 
-  /* .grid {
+  .grid {
     grid-template-columns: 1fr;
     grid-gap: 12px;
-  } */
+  }
 
   section {
     padding: 30px 0;
