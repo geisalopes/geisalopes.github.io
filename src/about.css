@@ -372,10 +372,6 @@ footer a {
     padding: 0;
   }
 
-  .about-me-center-image {
-    padding: 20px 0;
-  }
-
   .about-me-section h1 {
     font-size: 32px;
     text-align: center;
@@ -383,8 +379,14 @@ footer a {
   }
 
   .about-me-section p {
+    padding: 0 10px;
+    margin: 0 10px;
     font-size: 14px;
     text-align: justify;
+  }
+
+  .about-me-center-image {
+    padding: 20px 0;
   }
 
   .back-home-container a {
@@ -398,12 +400,8 @@ footer a {
     padding-bottom: 0;
   }
 
-  .grid-2-columns-about-me > * {
-    width: 100%;
-  }
-
   .img-geisa-lopes {
-    max-width: 70%;
+    max-width: 65%;
     position: relative;
     margin: 0 auto;
     display: block;
@@ -415,7 +413,14 @@ footer a {
     text-align: center;
   }
 
+  .my-projects-section h3 {
+    margin-bottom: 0;
+    font-size: 18px;
+    text-align: center;
+  }
+
   .my-projects-section p {
+    padding: 0 10px;
     margin: 0 auto;
     font-size: 16px;
     text-align: center;
@@ -425,32 +430,14 @@ footer a {
     content: none;
   }
 
-  .grid-2-columns-my-projects {
-    grid-gap: 24px;
-  }
-
   .grid-projects img {
-    max-width: 100%;
+    max-width: 70%;
     margin-top: 30px;
-  }
-
-  .grid-3-columns-my-certifications {
-    grid-gap: 20px;
   }
 
   .grid-certifications img {
-    max-width: 100%;
-  }
-
-  .certification-img img {
-    max-width: 100%;
+    max-width: 70%;
     margin-top: 30px;
-  }
-
-  .my-projects-section h3 {
-    margin-bottom: 0;
-    font-size: 18px;
-    text-align: center;
   }
 
   .certifications-section {
@@ -491,7 +478,6 @@ footer a {
 
   .grid-4-columns-footer {
     grid-template-columns: 1fr;
-    grid-gap: 12px;
   }
 
   .grid {
