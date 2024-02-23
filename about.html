@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="src/about.css" />
@@ -26,19 +26,27 @@
     <div class="container">
       <header>
         <section class="grid grid-2-columns-about-me">
-          <div class="about-me-container">
+          <div class="about-me-section">
             <h1>Geisa Lopes</h1>
             <p>
               I'm a human resources professional who recently discovered a new
-              passion: programming. I love creating websites and applications
-              with simple, beautiful and responsive themes
+              passion: <span class="colored-word">coding</span>. <br />
+              Having lived in Berlin for almos five years, I have a deep
+              appreciation for the city's vibrant tech scene. My move to another
+              country marked a crucial moment in my journey to explore a career
+              change. As a front-end development student, I am immersed in
+              learning HTML, CSS and JavaScript, navigating the intricacies of
+              creating functional, visually pleasing and user-friendly websites.
             </p>
+            <div class="back-home-container">
+              <a href="index.html">back to home</a>
+            </div>
           </div>
           <div class="about-me-center-image">
             <div class="image-wrapper">
               <img
                 class="img-geisa-lopes"
-                src="src/images/geisa_lopes.jpg"
+                src="src/images/geisa_museum.jpg"
                 alt="Geisa Lopes"
               />
             </div>
@@ -47,7 +55,7 @@
       </header>
 
       <main>
-        <section class="my-projects-container">
+        <section class="my-projects-section">
           <h2>My Projects</h2>
           <p>
             I recently developed two apps for
@@ -87,39 +95,64 @@
           </div>
         </section>
 
-        <section class="certifications-container">
+        <section class="certifications-section">
           <h2>Certifications</h2>
           <div
             class="grid grid-3-columns-my-certifications grid-certifications"
           >
             <div class="grid-item">
               <a
-                href="https://puter.com/app/weather"
+                href="https://www.shecodes.io/graduates/89118-geisa-lopes"
                 target="_blank"
-                class="project-title"
+                class="certification-title"
                 ><img
-                  src="src/images/weather_puter.jpg"
-                  alt="Weather App"
-                  class="project-img"
+                  src="src/images/cert-frontend-dev.png"
+                  alt="Frontend Certification"
+                  class="certification-img"
                 />
-                <h3>Weather</h3>
               </a>
             </div>
-            <div class="grid-item-wordbook">
+            <div class="grid-item">
               <a
-                href="https://puter.com/app/wordbook"
+                href="https://www.shecodes.io/graduates/89118-geisa-lopes"
                 target="_blank"
-                class="project-title"
+                class="certification-title"
                 ><img
-                  src="src/images/wordbook_puter.png"
-                  alt="Wordbook"
-                  class="project-img"
+                  src="src/images/cert-react-webdev.png"
+                  alt="React Certification"
+                  class="certification-img"
                 />
-                <h3>Wordbook</h3></a
-              >
+              </a>
+            </div>
+            <div class="grid-item">
+              <a
+                href="https://www.shecodes.io/graduates/89118-geisa-lopes"
+                target="_blank"
+                class="certification-title"
+                ><img
+                  src="src/images/cert-responsive-webdev.png"
+                  alt="Responsive Certification"
+                  class="certification-img"
+                />
+              </a>
             </div>
           </div>
         </section>
+
+        <!-- SESSION TO BE FINALISED LATER -->
+        <!-- <h2>Skills</h2>
+          <div class="grid grid-4-columns-my-skills grid-skills">
+            <div class="my-profile-skills">
+              <div class="my-profile-skills-visual">
+                <img src="src/images/html-img.png" alt="html-icon" />
+              </div>
+              <h4>HTML</h4>
+            </div>
+            <img src="src/images/css-img.png" alt="html-icon" />
+            <img src="src/images/javascript-img.png" alt="html-icon" />
+            <img src="src/images/vscode-img.png" alt="html-icon" />
+          </div> -->
+        <!-- SESSION TO BE FINALISED LATER -->
       </main>
       <footer>
         <a name="contact-me"></a>

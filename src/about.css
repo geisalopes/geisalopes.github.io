@@ -3,6 +3,11 @@ body {
   background-color: #f9f7f4;
 }
 
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
 section {
   max-width: 100%;
   margin: 0 auto;
@@ -15,7 +20,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: normal;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 /* BEGIN OF HEADER SECTION */
@@ -27,8 +32,8 @@ header {
 }
 
 header h1 {
-  font-size: 42px;
-  font-weight: 500;
+  font-size: 58px;
+  font-weight: 700;
   line-height: 1.5;
   text-align: left;
   color: #af2858;
@@ -36,11 +41,17 @@ header h1 {
 }
 
 header p {
-  font-size: 24px;
+  margin-top: 0;
+  font-weight: normal;
+  font-size: 18px;
   text-align: left;
 }
 
-.about-me-container {
+.colored-word {
+  color: #af2858;
+}
+
+.about-me-section {
   margin: 30px 0 0 0;
   padding: 0 0 0 100px;
 }
@@ -66,7 +77,7 @@ header p {
 }
 
 .img-geisa-lopes {
-  max-width: 350px;
+  max-width: 400px;
   border-radius: 42% 58% 61% 39% / 77% 44% 56% 23%;
   height: auto; /* mantém a proporção original da imagem */
   position: absolute; /* posicionamento absoluto em relação ao contêiner pai */
@@ -90,17 +101,18 @@ header p {
 /* GENERAL GRID USED FOR ALL GRIDS ON THE PAGE */
 
 /* BEGIN OF MY PUTER PROJECTS SECTION */
-.my-projects-container h2 {
+.my-projects-section h2 {
   margin: 100px 0 30px 100px;
-  font-size: 38px;
-  font-weight: 500;
+  font-size: 42px;
+  font-weight: 700;
   line-height: 1.5;
   color: #af2858;
 }
 
-.my-projects-container P {
+.my-projects-section p {
+  font-weight: normal;
   margin: 0 200px 70px 100px;
-  font-size: 25px;
+  font-size: 20px;
   line-height: 1.5;
   color: black;
 }
@@ -116,10 +128,10 @@ a.puter-website:hover {
 }
 
 /* Create a line below the text using ::after*/
-.my-projects-container p::after {
+.my-projects-section p::after {
   content: "";
   display: block;
-  width: 10%;
+  width: 8%;
   height: 3px;
   background-color: black;
   margin-top: 30px;
@@ -134,29 +146,29 @@ a.puter-website:hover {
   text-align: center;
 }
 
-.grid-item-weather {
+/* .grid-item-weather {
   margin-left: 100px;
 }
 
 .grid-item-wordbook {
   margin-right: 100px;
-}
+} */
 
 .grid-projects img {
   margin: 0 auto;
   display: block;
-  max-width: 600px;
+  max-width: 450px;
   height: auto;
 }
 
+.my-projects-section h3 {
+  font-weight: 500;
+  text-align: center;
+  font-size: 22px;
+}
 .project-title {
   text-decoration: none;
   color: black;
-}
-
-.my-projects-container h3 {
-  text-align: center;
-  font-size: 26px;
 }
 
 .project-title:hover {
@@ -165,28 +177,67 @@ a.puter-website:hover {
 }
 /* END OF THE PUTER PROJECT SECTION */
 
-/* BEGIN OF THE CERTIFICATIONS SECTION */
-
-.certifications-container {
+/* BEGIN OF THE CERTIFICATIONS SECTION - NOT FINISHED YET*/
+.certifications-section {
   background-color: #e5deda;
+  padding-bottom: 100px;
 }
 
-.certifications-container h2 {
-  margin: 100px 0 30px 100px;
-  font-size: 38px;
-  font-weight: 500;
+.certifications-section h2 {
+  margin: 40px 0 70px 100px;
+  font-size: 42px;
+  font-weight: 700;
   line-height: 1.5;
   color: #af2858;
 }
 
-.certifications-container h2::after {
+.certifications-section h2::after {
   content: "";
   display: block;
-  width: 10%;
+  width: 8%;
   height: 3px;
   background-color: black;
   margin-top: 30px;
 }
+
+.grid-3-columns-my-certifications {
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 0;
+}
+
+.grid-item {
+  text-align: center;
+}
+
+.grid-certifications img {
+  margin: 0 auto;
+  display: block;
+  max-width: 300px;
+  height: auto;
+}
+
+.grid-4-columns-my-skills {
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0;
+}
+
+.my-profile-skills-visual {
+  max-width: 100px;
+  background: #faf9f7;
+  border: 1px solid rgba(39, 33, 66, 0.1);
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  margin: 0 8px;
+  justify-content: center;
+}
+
+.my-profile-skills-visual img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+}
+/* END OF THE CERTIFICATIONS SECTION */
 
 /* BEGIN OF THE FOOTER SECTION */
 footer {
@@ -229,31 +280,22 @@ footer a {
   color: #c06f8c;
 }
 
-.forward-container {
-  text-align: center;
-  margin: 40px;
-}
-
-.forward-container h3 {
-  font-size: 32px;
-}
-
-.forward-container a {
+.back-home-container a {
   background: #15aabf;
+  color: white;
+  display: inline-block;
   font-size: 14px;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 1px;
   line-height: 1.5;
+  margin: 0;
+  padding: 16px 32px;
   text-align: center;
-  text-transform: uppercase;
-  color: white;
-  padding: 20px 34px;
   text-decoration: none;
-  margin: 5px;
-  display: inline-block;
+  text-transform: uppercase;
 }
 
-.forward-container a:hover {
+.forward-section a:hover {
   opacity: 0.7;
   transition: all 180ms ease-in-out;
 }

@@ -62,6 +62,7 @@ header a {
   display: inline-block;
 }
 
+/* BEGIN OF THE FOOTER SECTION */
 footer {
   /* background-repeat: no-repeat; */
   background-size: cover;
@@ -101,6 +102,7 @@ footer li {
 footer a {
   color: #c06f8c;
 }
+/* END OF THE FOOTER SECTION */
 
 main {
   background-color: #e5deda;
@@ -149,15 +151,27 @@ section.my-portfolio-container h4 {
   margin: 40px;
 }
 
+.forward-container h2 {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #a14867;
+  margin-bottom: 20px;
+}
+
 .forward-container h3 {
-  font-size: 32px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: black;
+  padding: 0 100px;
+  margin: 0 200px 50px 200px;
 }
 
 .forward-container a {
   background: #15aabf;
   font-size: 14px;
   font-weight: 700;
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   line-height: 1.5;
   text-align: center;
   text-transform: uppercase;
