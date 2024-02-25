@@ -9,7 +9,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: normal;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 /* BEGIN OF THE NAV BAR */
@@ -77,8 +77,8 @@ header {
 }
 
 header h1 {
-  font-size: 52px;
-  font-weight: 700;
+  font-size: 58px;
+  font-weight: 800;
   line-height: 1.5;
   margin: 30px 0 0 0;
 }
@@ -167,7 +167,7 @@ main h2 {
   margin: 0;
 }
 
-main h3 {
+main p {
   font-size: 20px;
   line-height: 1.5;
   color: black;
@@ -203,8 +203,8 @@ section.my-portfolio-container h4 {
 }
 
 .forward-container h2 {
-  font-size: 38px;
-  font-weight: 500;
+  font-size: 48px;
+  font-weight: 700;
   line-height: 1.5;
   color: #a14867;
   margin-bottom: 20px;
@@ -242,7 +242,7 @@ section.my-portfolio-container h4 {
   margin: 50px 0 0 50px;
 }
 
-.my-portfolio-container h3 {
+.my-portfolio-container p {
   margin: 0 0 50px 50px;
 }
 
@@ -447,7 +447,7 @@ section.my-portfolio-container h4 {
     font-size: 30px;
   }
 
-  .forward-container h3 {
+  .forward-container p {
     text-align: center;
     margin: 0;
     font-size: 16px;
