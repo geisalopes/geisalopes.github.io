@@ -1,6 +1,22 @@
 body {
-  font-family: "Poppins", sans-serif;
   background-color: #f9f7f4;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1400px;
+}
+
+section {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 64px;
 }
 
 h1,
@@ -15,9 +31,9 @@ h6 {
 /* BEGIN OF THE NAV BAR */
 nav {
   background-color: #f9f7f4;
+  font-size: 20px;
   padding: 20px 0;
   width: 100%;
-  font-size: 20px;
 }
 
 nav a {
@@ -25,10 +41,10 @@ nav a {
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-link-left {
@@ -44,9 +60,9 @@ nav ul {
 }
 
 .nav-link-right {
-  padding-right: 70px;
   display: flex;
   margin-left: auto;
+  padding-right: 70px;
 }
 
 .nav-link-right a {
@@ -60,15 +76,16 @@ nav ul {
 .nav-link-right li {
   margin-left: 20px;
 }
-
 /* END OF THE NAV BAR */
 
+/* BEGIN OF THE HEADER SECTION */
 header {
+  background-repeat: no-repeat;
+  background-size: cover;
   color: #a14867;
   padding: 150px 0;
   text-align: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.6),
       rgba(255, 255, 255, 0.9)
@@ -99,79 +116,49 @@ header h3 {
 }
 
 header a {
+  background: #c06f8c;
+  color: white;
+  display: inline-block;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 3px;
   line-height: 1.5;
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-  padding: 16px 32px;
-  text-decoration: none;
-  background: #c06f8c;
   margin-top: 32px;
-  display: inline-block;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
 }
+/* END OF THE HEADER SECTION */
 
-/* BEGIN OF THE FOOTER SECTION */
-footer {
-  /* background-repeat: no-repeat; */
-  background-size: cover;
-  background-image: linear-gradient(
-      rgba(249, 247, 244, 0.92),
-      rgba(249, 247, 244, 0.9)
-    ),
-    url("./images/leaves.jpg");
-  background-size: 500px;
-  background-position-y: bottom;
-}
-
-footer h3 {
-  font-weight: normal;
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-footer p {
-  color: #a14867;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.5;
-  opacity: 0.7;
-}
-
-footer ul {
-  padding: 0;
-}
-
-footer li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-footer a {
-  color: #c06f8c;
-}
-/* END OF THE FOOTER SECTION */
-
+/* BEGIN OF THE MAIN SECTION */
 main {
   background-color: #e5deda;
 }
 
 main h2 {
-  font-size: 38px;
-  font-weight: 500;
-  line-height: 1.5;
   color: #a14867;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.5;
   margin: 0;
 }
 
 main p {
+  color: black;
   font-size: 20px;
   line-height: 1.5;
-  color: black;
   margin-top: 8px;
+}
+/* END OF THE MAIN SECTION */
+
+/* BEGIN OF THE ABOUT SECTION */
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+}
+
+.about-me-container {
+  padding: 100px 50px 0 50px;
 }
 
 .about-me-container a {
@@ -182,60 +169,26 @@ main p {
   color: #c06f8c;
 }
 
-section {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 30px;
+.about-me-center-image {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
-section.my-portfolio-container {
-  background-color: #f9f7f4;
-}
-
-section.my-portfolio-container h4 {
-  font-size: 18px;
-  margin-bottom: 50px;
-}
-
-.forward-container {
-  text-align: center;
-  margin: 40px;
-}
-
-.forward-container h2 {
-  font-size: 48px;
-  font-weight: 700;
-  line-height: 1.5;
-  color: #a14867;
-  margin-bottom: 20px;
-}
-
-.forward-container h3 {
-  font-size: 20px;
-  line-height: 1.5;
-  color: black;
-  padding: 0 100px;
-  margin: 0 200px 50px 200px;
-}
-
-.forward-container a {
-  background: #15aabf;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  line-height: 1.5;
-  text-align: center;
-  text-transform: uppercase;
-  color: white;
-  padding: 20px 34px;
-  text-decoration: none;
-  margin: 5px;
-  display: inline-block;
-}
-
-.forward-container a:hover {
-  opacity: 0.7;
+.img-woman-coding {
+  border-radius: 50%;
+  max-width: 350px;
   transition: all 180ms ease-in-out;
+}
+.img-woman-coding:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+/* END OF THE ABOUT SECTION */
+
+/* BEGIN OF THE PORTFOLIO SECTION */
+.my-portfolio-container {
+  background-color: #f9f7f4;
 }
 
 .my-portfolio-container h2 {
@@ -246,127 +199,153 @@ section.my-portfolio-container h4 {
   margin: 0 0 50px 50px;
 }
 
-/* CREATE A LINE BELOW THE TEXT USING ::AFTER*/
-.my-portfolio-container h3::after {
+/* Create a line below the text ::after*/
+.my-portfolio-container p::after {
+  background-color: black;
   content: "";
   display: block;
-  width: 10%;
-  height: 2px;
-  background-color: black;
+  height: 3px;
   margin-top: 30px;
-}
-
-.about-me-center-image {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.container {
-  margin: 0 auto;
-  max-width: 1400px;
-}
-
-.grid {
-  display: grid;
-  grid-gap: 64px;
-}
-
-.grid-2-columns {
-  grid-template-columns: 1fr 1fr;
+  width: 8%;
 }
 
 .grid-3-columns-my-projects {
-  grid-template-columns: repeat(3, 1fr);
   grid-gap: 0;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .grid-item {
   text-align: center;
 }
 
-.grid-projects img {
-  margin: 0 auto;
-  display: block;
-  max-width: 300px;
-  height: auto;
+.project-img {
+  max-height: 90%;
+  max-width: 90%;
+  object-fit: cover;
+}
+
+.my-portfolio-container h4 {
+  font-size: 20px;
+  margin-bottom: 50px;
 }
 
 .project-title {
-  text-decoration: none;
   color: black;
+  text-decoration: none;
+}
+.project-title:hover {
+  color: #af2858;
+  text-decoration: none;
+}
+/* END OF THE PORTFOLIO SECTION */
+
+/* BEGIN OF THE FORWARD SECTION */
+.forward-container {
+  margin: 40px;
+  text-align: center;
 }
 
-.project-title:hover {
+.forward-container h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.forward-container h3 {
+  color: black;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 0 200px 50px 200px;
+  padding: 0 100px;
+}
+
+.forward-container a {
+  background: #15aabf;
+  color: white;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  margin: 5px;
+  padding: 20px 34px;
+  text-align: center;
   text-decoration: none;
-  color: #af2858;
+  text-transform: uppercase;
+}
+
+.forward-container a:hover {
+  opacity: 0.7;
+  transition: all 180ms ease-in-out;
+}
+/* END OF THE FORWARD SECTION */
+
+/* BEGIN OF THE FOOTER SECTION */
+footer {
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 500px;
+
+  /*  */
+  background-image: linear-gradient(
+      rgba(249, 247, 244, 0.92),
+      rgba(249, 247, 244, 0.9)
+    ),
+    url("./images/leaves.jpg");
 }
 
 .grid-4-columns-footer {
-  grid-template-columns: auto 800px auto auto;
   grid-gap: 0;
+  grid-template-columns: auto 800px auto auto;
 }
 
-.footer-section li {
-  list-style: none;
-  padding: 0;
-  margin-right: 40px;
-  font-size: 30px;
-  display: inline;
-}
-
-.footer-section .shecodes-icon {
-  margin-right: 0;
-}
-
-.footer-section ul {
-  margin-left: 40px;
-  padding: 0;
-}
-
-.footer-section p {
+footer p {
+  color: #a14867;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+  opacity: 0.7;
+  padding-top: 5px;
   text-align: left;
-  padding-top: 5px;
-  font-size: 18px;
 }
 
-.footer-section a {
-  text-decoration: none;
+footer h3 {
   color: #15aabf;
-}
-
-.footer-section h3 {
-  color: #15aabf;
-  padding-top: 5px;
   display: flex;
-  justify-content: right;
   font-size: 18px;
+  font-weight: 700;
+  justify-content: right;
+  line-height: 1.5;
+  padding-top: 5px;
 }
 
-.footer-section h2 {
+footer h2 {
   margin-left: 30px;
   text-align: center;
 }
 
-.project-img {
-  max-width: 90%;
-  max-height: 90%;
-  object-fit: cover;
+footer ul {
+  padding: 0;
+  margin-left: 40px;
 }
 
-.about-me-container {
-  padding: 100px 50px 0 50px;
+footer li {
+  display: inline;
+  font-size: 30px;
+  list-style: none;
+  margin-right: 40px;
+  padding: 0;
 }
 
-.img-woman-coding {
-  max-width: 350px;
-  border-radius: 50%;
-  transition: all 180ms ease-in-out;
+footer a {
+  color: #15aabf;
+  text-decoration: none;
 }
 
-.img-woman-coding:hover {
-  opacity: 0.8;
-  transform: scale(1.1);
+footer .shecodes-icon {
+  margin-right: 0;
 }
+/* END OF THE FOOTER SECTION */
 
 /* MEDIA QUERY */
 @media (max-width: 960px) {
@@ -392,13 +371,17 @@ section.my-portfolio-container h4 {
   }
 
   main h2 {
-    text-align: center;
     font-size: 30px;
+    text-align: center;
   }
 
   main h3 {
     font-size: 16px;
     text-align: center;
+  }
+
+  main p {
+    font-size: 16px;
   }
 
   .about-me-container {
@@ -415,20 +398,19 @@ section.my-portfolio-container h4 {
   }
 
   .my-portfolio-container h2 {
-    text-align: center;
-    margin: 0;
     font-size: 30px;
+    margin: 0;
+    text-align: center;
   }
 
-  .my-portfolio-container h3 {
-    text-align: center;
+  .my-portfolio-container p {
     margin: 0;
-    font-size: 16px;
     margin-bottom: 30px;
     padding: 20px 0 30px 0;
+    text-align: center;
   }
 
-  .my-portfolio-container h3::after {
+  .my-portfolio-container p::after {
     content: none;
   }
 
@@ -436,22 +418,21 @@ section.my-portfolio-container h4 {
     max-width: 250px;
   }
 
-  section.my-portfolio-container h4 {
+  .my-portfolio-container h4 {
     font-size: 14px;
     margin: 10px 0;
   }
 
   .forward-container h2 {
-    text-align: center;
-    margin: 0;
     font-size: 30px;
+    margin: 0;
+    text-align: center;
   }
 
   .forward-container p {
-    text-align: center;
     margin: 0;
-    font-size: 16px;
     padding: 20px 0 30px 0;
+    text-align: center;
   }
 
   .forward-container a {
@@ -459,31 +440,31 @@ section.my-portfolio-container h4 {
     padding: 10px 22px;
   }
 
-  .footer-section p {
-    text-align: center;
-    padding: 0;
-    margin: 0;
+  footer p {
     font-size: 10px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
   }
 
-  .footer-section h3 {
-    padding: 0;
+  footer h3 {
     font-size: 16px;
     margin: 0 auto;
+    padding: 0;
   }
 
-  .footer-section h2 {
+  footer h2 {
     display: none;
   }
 
-  .footer-section ul {
+  footer ul {
     margin: 0 auto;
     padding: 0;
   }
 
   .grid {
-    grid-template-columns: 1fr;
     grid-gap: 12px;
+    grid-template-columns: 1fr;
   }
 
   section {
@@ -495,15 +476,15 @@ section.my-portfolio-container h4 {
   }
 
   .nav-link-left {
+    font-size: 12px;
     margin-left: 5px;
     padding-left: 0;
-    font-size: 12px;
   }
 
   .nav-link-right {
+    font-size: 12px;
     margin-right: 5px;
     padding-right: 0;
-    font-size: 12px;
   }
 
   .nav-link-right li {
