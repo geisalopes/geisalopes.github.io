@@ -488,10 +488,6 @@ footer a {
     justify-content: center;
     margin-top: 0;
     padding: 0;
-
-    /* align horizontally */
-    /* align vertically */
-    /* ensures that items are stacked vertically */
   }
 
   .about-me-section h1 {
@@ -574,6 +570,37 @@ footer a {
 
   .certifications-section h2::after {
     content: none;
+  }
+
+  .grid-2-columns-jogging {
+    display: block;
+  }
+
+  .jogging-container {
+    padding: 16px;
+    text-align: center;
+  }
+
+  .jogging-container h2 {
+    font-size: 30px;
+    margin: 0 0 16px 0;
+    /* text-align: center; */
+  }
+
+  .jogging-container p {
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .jogging-center-image {
+    margin: 15px;
+    align-items: center;
+  }
+
+  .img-geisa-jogging {
+    max-width: 90%;
   }
 
   .footer-section p {
