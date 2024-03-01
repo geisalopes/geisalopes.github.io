@@ -14,6 +14,27 @@ section {
   padding: 30px;
 }
 
+/* BEGIN OF THE MAIN SECTION */
+main {
+  background-color: #f9f7f4;
+}
+
+main h2 {
+  color: #a14867;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+}
+
+main p {
+  color: black;
+  font-size: 20px;
+  line-height: 1.5;
+  margin-top: 8px;
+}
+/* END OF THE MAIN SECTION */
+
 h1,
 h2,
 h3,
@@ -125,10 +146,10 @@ header p {
   overflow: visible;
   position: relative;
   width: 400px;
-   /* allows the image to extend beyond the dimensions of the container */
-   /* necessary for absolute positioning */
-   /* image width */
-   /* image height */
+  /* allows the image to extend beyond the dimensions of the container */
+  /* necessary for absolute positioning */
+  /* image width */
+  /* image height */
 }
 
 .img-geisa-lopes {
@@ -138,9 +159,9 @@ header p {
   position: absolute;
   top: -20px;
 
-   /* mantém a proporção original da imagem */
-   /* posicionamento absoluto em relação ao contêiner pai */
-   /* move a imagem para cima para estender além do contêiner pai */
+  /* mantém a proporção original da imagem */
+  /* posicionamento absoluto em relação ao contêiner pai */
+  /* move a imagem para cima para estender além do contêiner pai */
 }
 
 /* Return the image to the default layout, without floating over the container. First, erase the two styles above.
@@ -238,7 +259,7 @@ a.puter-website:hover {
 
 /* BEGIN OF THE CERTIFICATIONS SECTION - NOT FINISHED YET*/
 .certifications-section {
-  background-color: #e5deda;
+  background-color: #f0eae7;
   padding-bottom: 100px;
 }
 
@@ -297,6 +318,39 @@ a.puter-website:hover {
   max-width: 100%;
 }
 /* END OF THE CERTIFICATIONS SECTION */
+
+/* BEGIN OF THE PERSONAL SECTION */
+.grid-2-columns-jogging {
+  background-color: #e5deda;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 32px;
+}
+
+.jogging-container {
+  padding-top: 50px;
+}
+
+.jogging-container h2 {
+  margin-left: 100px;
+}
+
+.jogging-container p {
+  margin-left: 100px;
+}
+
+.jogging-center-image {
+  margin: 30px 70px 0 0;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.img-geisa-jogging {
+  max-width: 350px;
+  transition: all 180ms ease-in-out;
+}
+
+/* END OF THE ABOUT SECTION */
 
 /* BEGIN OF THE FOOTER SECTION */
 footer {
@@ -435,9 +489,9 @@ footer a {
     margin-top: 0;
     padding: 0;
 
-     /* align horizontally */
-     /* align vertically */
-     /* ensures that items are stacked vertically */
+    /* align horizontally */
+    /* align vertically */
+    /* ensures that items are stacked vertically */
   }
 
   .about-me-section h1 {
