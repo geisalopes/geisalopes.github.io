@@ -629,6 +629,27 @@ footer a {
     max-width: 90%;
   }
 
+  .hobbies-container {
+    padding: 16px;
+    text-align: center;
+  }
+
+  .hobbies-container p {
+    font-size: 16px;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  .hobbies-center-image {
+    margin: 15px;
+    align-items: center;
+  }
+
+  .img-geisa-hobbies {
+    max-width: 90%;
+  }
+
   .footer-section p {
     font-size: 10px;
     margin: 0;
