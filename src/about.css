@@ -346,11 +346,37 @@ a.puter-website:hover {
 }
 
 .img-geisa-jogging {
+  max-width: 400px;
+  transition: all 180ms ease-in-out;
+}
+
+.grid-2-columns-hobbies {
+  background-color: #f0eae7;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 32px;
+}
+
+.hobbies-container {
+  padding-top: 50px;
+}
+
+.hobbies-container p {
+  margin-right: 100px;
+}
+
+.hobbies-center-image {
+  margin: 0 70px 0 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.img-geisa-hobbies {
   max-width: 350px;
   transition: all 180ms ease-in-out;
 }
 
-/* END OF THE ABOUT SECTION */
+/* END OF THE PERSONAL SECTION */
 
 /* BEGIN OF THE FOOTER SECTION */
 footer {
