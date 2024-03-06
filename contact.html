@@ -50,8 +50,13 @@
             </p>
           </div>
           <div class="form-box-message">
-            <form action="https://api.staticforms.xyz/submit" method="POST">
+            <form action="https://api.staticforms.xyz/submit" method="post">
               <div class="form-group">
+                <input
+                  type="hidden"
+                  name="accessKey"
+                  value="d0c34fe0-4123-485d-8cb1-9bb34b922a8c"
+                />
                 <label for="name">Your Name</label>
                 <input type="text" id="name" name="name" required />
               </div>
@@ -70,13 +75,8 @@
                 ></textarea>
                 <input
                   type="hidden"
-                  name="accessKey"
-                  value="d0c34fe0-4123-485d-8cb1-9bb34b922a8c"
-                />
-                <input
-                  type="hidden"
                   name="redirectTo"
-                  value="https://geisalopes.github.io/thanks.html"
+                  value="https://geisalopes.github.io/about.html"
                 />
               </div>
               <div class="form-group">
