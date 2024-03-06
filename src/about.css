@@ -1,11 +1,13 @@
 body {
   background-color: #f9f7f4;
   font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  display: block;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 1400px;
+  max-width: 100%;
 }
 
 section {

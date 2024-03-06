@@ -1,0 +1,162 @@
+body {
+  background-color: #f9f7f4;
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* BEGIN OF THE NAV BAR */
+nav {
+  background-color: #f9f7f4;
+  font-size: 20px;
+  padding: 20px 0;
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link-left {
+  padding-left: 70px;
+}
+
+.nav-link-left a {
+  color: black;
+}
+
+.nav-link-left a:hover {
+  color: #15aabf;
+}
+
+.nav-link-right {
+  display: flex;
+  margin-left: auto;
+  padding-right: 70px;
+}
+
+.nav-link-right a {
+  color: #15aabf;
+}
+
+.nav-link-right a:hover {
+  color: #af2858;
+}
+
+.nav-link-right li {
+  margin-left: 20px;
+}
+/* END OF THE NAV BAR */
+
+/* BEGIN OF THE FORM SECTION*/
+
+section {
+  background-color: #e5deda;
+  align-items: center;
+  padding: 80px 45px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 64px;
+}
+
+.grid-2-columns {
+  grid-template-columns: 1fr 1fr;
+  display: flex;
+}
+
+.form-introduction-message {
+  padding: 30px;
+  margin: 80px;
+}
+
+.form-introduction-message h1 {
+  color: #af2858;
+  font-size: 58px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  text-align: left;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.form-introduction-message p {
+  font-size: 18px;
+  font-weight: normal;
+  margin-top: 0;
+  text-align: left;
+}
+
+.form-introduction-message a {
+  color: #af2858;
+  text-decoration: none;
+}
+
+.form-introduction-message a:hover {
+  color: #c06f8c;
+}
+
+.form-box-message {
+  margin-right: 100px;
+}
+
+.form-section form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 600px;
+  width: 500px;
+  background-color: #f9f7f4;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+
+.form-group {
+  margin: 20px 0;
+}
+
+label {
+  font-size: 20px;
+}
+
+input {
+  margin-top: 20px;
+  display: block;
+  width: 400px;
+  height: 30px;
+}
+
+textarea {
+  margin-top: 20px;
+  display: block;
+  width: 400px;
+}
+
+button {
+  background: #15aabf;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  padding: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  width: 400px;
+}
+
+/* END OF THE FORM SECTION*/

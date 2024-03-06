@@ -1,0 +1,113 @@
+body {
+  background-color: #f9f7f4;
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+/* BEGIN OF THE NAV BAR */
+nav {
+  background-color: #f9f7f4;
+  font-size: 20px;
+  padding: 20px 0;
+  width: 100%;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link-left {
+  padding-left: 70px;
+}
+
+.nav-link-left a {
+  color: black;
+}
+
+.nav-link-left a:hover {
+  color: #15aabf;
+}
+
+.nav-link-right {
+  display: flex;
+  margin-left: auto;
+  padding-right: 70px;
+}
+
+.nav-link-right a {
+  color: #15aabf;
+}
+
+.nav-link-right a:hover {
+  color: #af2858;
+}
+
+.nav-link-right li {
+  margin-left: 20px;
+}
+/* END OF THE NAV BAR */
+
+/* BEGIN OF THE THANKS SECTION*/
+
+section {
+  background-color: #e5deda;
+  align-items: center;
+  padding: 200px 45px;
+}
+
+.thanks-section h1 {
+  color: #af2858;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.thanks-section p {
+  font-size: 28px;
+  font-weight: normal;
+  margin-top: 25px;
+  text-align: center;
+}
+
+.thanks-button {
+  margin-top: 50px;
+  justify-content: center;
+  display: flex;
+}
+
+button {
+  background: #15aabf;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 1.5;
+  padding: 12px;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  padding: 20px;
+}
+
+button a {
+  text-decoration: none;
+  color: #f9f7f4;
+}
+
+/* END OF THE THANKS SECTION*/
