@@ -10,6 +10,15 @@ body {
   max-width: 100%;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito Sans", sans-serif;
+}
+
 /* BEGIN OF THE NAV BAR */
 nav {
   background-color: #f9f7f4;
@@ -62,7 +71,7 @@ nav ul {
 
 /* BEGIN OF THE FORM SECTION*/
 
-section {
+.form-section {
   background-color: #e5deda;
   align-items: center;
   padding: 80px 45px;
@@ -90,7 +99,6 @@ section {
   line-height: 1.5;
   margin: 0;
   text-align: left;
-  font-family: "Nunito Sans", sans-serif;
 }
 
 .form-introduction-message p {
@@ -158,5 +166,193 @@ button {
   border: none;
   width: 400px;
 }
-
 /* END OF THE FORM SECTION*/
+
+/* BEGIN OF THE FOOTER SECTION */
+.footer-section {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 30px;
+}
+
+footer {
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 500px;
+
+  /*  */
+  background-image: linear-gradient(
+      rgba(249, 247, 244, 0.92),
+      rgba(249, 247, 244, 0.9)
+    ),
+    url("./images/leaves.jpg");
+}
+
+.grid-4-columns-footer {
+  grid-gap: 0;
+  grid-template-columns: auto 800px auto auto;
+}
+
+footer p {
+  margin-top: 20px;
+  color: #a14867;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+  opacity: 0.7;
+  padding-top: 5px;
+  text-align: left;
+}
+
+footer h3 {
+  color: #15aabf;
+  display: flex;
+  font-size: 20px;
+  justify-content: right;
+  line-height: 1.5;
+  padding-top: 5px;
+}
+
+footer h2 {
+  margin-left: 30px;
+  text-align: center;
+}
+
+footer ul {
+  padding: 0;
+  margin-left: 40px;
+}
+
+footer li {
+  display: inline;
+  font-size: 30px;
+  list-style: none;
+  margin-right: 40px;
+  padding: 0;
+}
+
+footer a {
+  color: #15aabf;
+  text-decoration: none;
+}
+
+footer .shecodes-icon {
+  margin-right: 0;
+}
+/* END OF THE FOOTER SECTION */
+
+/* MEDIA QUERY */
+
+@media (max-width: 960px) {
+  header {
+    padding-bottom: 0;
+  }
+
+  .grid {
+    grid-gap: 12px;
+    grid-template-columns: 1fr;
+    padding: 0;
+  }
+
+  .form-section {
+    flex-direction: column;
+  }
+
+  .form-introduction-message {
+    padding: 15px;
+    margin: 20px 5px 0 5px;
+  }
+
+  .form-introduction-message h1 {
+    font-size: 32px;
+    margin: 0 0 16px 0;
+    text-align: center;
+  }
+
+  .form-introduction-message p {
+    font-size: 14px;
+    text-align: justify;
+  }
+
+  .form-section form {
+    height: 500px;
+  }
+
+  .form-box-message {
+    margin: 0 10px;
+  }
+
+  .form-group {
+    margin: 10px;
+  }
+
+  input {
+    margin-top: 10px;
+    width: 300px;
+    height: 20px;
+  }
+
+  label {
+    font-size: 15px;
+  }
+
+  textarea {
+    margin-top: 10px;
+    width: 300px;
+  }
+
+  button {
+    width: 300px;
+  }
+
+  .grid-2-columns {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-section p {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .footer-section h3 {
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .footer-section h2 {
+    display: none;
+  }
+
+  .footer-section ul {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .grid-4-columns-footer {
+    grid-template-columns: 1fr;
+  }
+
+  nav {
+    padding: 10px 0;
+  }
+
+  .nav-link-left {
+    font-size: 12px;
+    margin-left: 5px;
+    padding-left: 0;
+  }
+
+  .nav-link-right {
+    font-size: 12px;
+    margin-right: 5px;
+    padding-right: 0;
+  }
+
+  .nav-link-right li {
+    margin-left: 10px;
+  }
+}

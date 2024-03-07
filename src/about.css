@@ -405,6 +405,7 @@ footer h3 {
 }
 
 footer p {
+  margin-top: 20px;
   color: #a14867;
   font-size: 14px;
   font-weight: normal;
@@ -612,7 +613,6 @@ footer a {
   .jogging-container h2 {
     font-size: 30px;
     margin: 0 0 16px 0;
-    /* text-align: center; */
   }
 
   .jogging-container p {
