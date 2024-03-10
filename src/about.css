@@ -474,6 +474,9 @@ footer a {
 
 /* MEDIA QUERY */
 @media (max-width: 960px) {
+  body {
+    overflow-x: hidden;
+  }
   header {
     padding-bottom: 0;
   }

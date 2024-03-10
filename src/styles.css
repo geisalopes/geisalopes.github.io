@@ -351,6 +351,10 @@ footer .shecodes-icon {
 
 /* MEDIA QUERY */
 @media (max-width: 960px) {
+  body {
+    overflow-x: hidden;
+  }
+
   header {
     padding: 60px 0;
   }
