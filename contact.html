@@ -24,16 +24,16 @@
             <li><a href="index.html">Home</a></li>
           </div>
           <div class="nav-link-right">
-            <li><a href="index.html#portfolio">Portfolio</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="#">Feedback</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
           </div>
         </ul>
       </nav>
-      <header>
-        <section class="grid grid-2-columns form-section">
-          <div class="form-introduction-message">
+      <main>
+        <div class="grid grid-2-columns">
+          <div class="contact-message">
             <h1>Talk to me!</h1>
             <p>
               I'd love to hear from you, whether it's to find out more about my
@@ -45,19 +45,19 @@
               >.
             </p>
           </div>
-          <div class="form-box-message">
+          <div class="contact-form">
             <form action="https://api.staticforms.xyz/submit" method="post">
+              <input
+                type="hidden"
+                name="accessKey"
+                value="d0c34fe0-4123-485d-8cb1-9bb34b922a8c"
+              />
+              <input
+                type="hidden"
+                name="redirectTo"
+                value="https://geisalopes.github.io/thanks.html"
+              />
               <div class="form-group">
-                <input
-                  type="hidden"
-                  name="accessKey"
-                  value="d0c34fe0-4123-485d-8cb1-9bb34b922a8c"
-                />
-                <input
-                  type="hidden"
-                  name="redirectTo"
-                  value="https://geisalopes.github.io/thanks.html"
-                />
                 <label for="name">Your Name</label>
                 <input type="text" id="name" name="name" required />
               </div>
@@ -66,7 +66,7 @@
                 <input type="email" id="email" name="email" required />
               </div>
               <div class="form-group">
-                <label for="message">Your Message</label><br />
+                <label for="message">Your Message</label>
                 <textarea
                   name="message"
                   id="message"
@@ -80,8 +80,8 @@
               </div>
             </form>
           </div>
-        </section>
-      </header>
+        </div>
+      </main>
       <footer>
         <a name="contact-me"></a>
         <section class="footer-section">
@@ -121,5 +121,10 @@
         </section>
       </footer>
     </div>
+    <script>
+      const yearElement = document.getElementById("year");
+      const currentYear = new Date().getFullYear();
+      yearElement.textContent = currentYear;
+    </script>
   </body>
 </html>

@@ -8,6 +8,12 @@ body {
 .container {
   margin: 0 auto;
   max-width: 100%;
+  display: block;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 12px;
 }
 
 h1,
@@ -17,6 +23,18 @@ h4,
 h5,
 h6 {
   font-family: "Nunito Sans", sans-serif;
+}
+
+/* The main here involves the 2-column grid div, so you can change its color and size, separate from the grid */
+main {
+  background-color: #e5deda;
+  padding: 40px 0;
+}
+
+section {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 30px;
 }
 
 /* BEGIN OF THE NAV BAR */
@@ -69,30 +87,18 @@ nav ul {
 }
 /* END OF THE NAV BAR */
 
-/* BEGIN OF THE FORM SECTION*/
-
-.form-section {
-  background-color: #e5deda;
-  align-items: center;
-  padding: 80px 45px;
-}
-
-.grid {
-  display: grid;
-  grid-gap: 64px;
-}
-
+/* BEGIN OF THE FORM SECTION */
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
-  display: flex;
+  margin: 0 100px;
 }
 
-.form-introduction-message {
-  padding: 30px;
-  margin: 80px;
+.grid .contact-message {
+  padding: 100px 70px 50px 0;
+  margin: 50px 10px 50px 50px;
 }
 
-.form-introduction-message h1 {
+.grid .contact-message h1 {
   color: #af2858;
   font-size: 58px;
   font-weight: 700;
@@ -101,86 +107,75 @@ nav ul {
   text-align: left;
 }
 
-.form-introduction-message p {
-  font-size: 18px;
+.grid .contact-message p {
+  font-size: 19px;
   font-weight: normal;
   margin-top: 0;
   text-align: left;
 }
 
-.form-introduction-message a {
+.grid .contact-message a {
   color: #af2858;
-  text-decoration: none;
 }
 
-.form-introduction-message a:hover {
-  color: #c06f8c;
-}
-
-.form-box-message {
-  margin-right: 100px;
-}
-
-.form-section form {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 600px;
-  width: 500px;
+.grid .contact-form {
+  padding: 50px;
+  margin: 50px 50px 50px 10px;
   background-color: #f9f7f4;
-  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
 }
 
+form {
+  display: grid;
+  justify-content: center;
+}
+
+/* div that surrounds the input and label */
 .form-group {
-  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
 }
 
-label {
-  font-size: 20px;
+.form-group label {
+  color: #15aabf;
+  font-size: 18px;
+  margin-bottom: 15px;
 }
 
-input {
-  margin-top: 20px;
-  display: block;
-  width: 400px;
-  height: 30px;
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-textarea {
-  margin-top: 20px;
-  display: block;
-  width: 400px;
-}
-
-button {
-  background: #15aabf;
-  color: white;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 2px;
-  line-height: 1.5;
-  padding: 12px;
-  text-align: center;
-  text-transform: uppercase;
+button[type="submit"] {
+  width: 100%;
+  padding: 15px;
+  background-color: #15aabf;
+  color: #fff;
   border: none;
-  width: 400px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
 }
-/* END OF THE FORM SECTION*/
+
+button[type="submit"]:hover {
+  background-color: #15abbfbc;
+  transition: all 0.25s ease-in-out;
+}
+
+/* BEGIN OF THE FORM SECTION */
 
 /* BEGIN OF THE FOOTER SECTION */
-.footer-section {
-  margin: 0 auto;
-  max-width: 100%;
-  padding: 30px;
-}
-
 footer {
   background-position-y: bottom;
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 500px;
-
   /*  */
   background-image: linear-gradient(
       rgba(249, 247, 244, 0.92),
@@ -189,42 +184,65 @@ footer {
     url("./images/leaves.jpg");
 }
 
-.grid-4-columns-footer {
-  grid-gap: 0;
-  grid-template-columns: auto 800px auto auto;
-}
-
-footer p {
-  margin-top: 20px;
-  color: #a14867;
-  font-size: 18px;
-  font-weight: normal;
-  line-height: 1.5;
-  opacity: 0.7;
-  padding-top: 5px;
-  text-align: left;
-}
-
 footer h3 {
   color: #15aabf;
   display: flex;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 700;
   justify-content: right;
   line-height: 1.5;
   padding-top: 5px;
 }
 
-footer h2 {
-  margin-left: 30px;
-  text-align: center;
+footer p {
+  margin-top: 20px;
+  color: #a14867;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5;
+  opacity: 0.7;
 }
 
 footer ul {
   padding: 0;
-  margin-left: 40px;
 }
 
 footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: #c06f8c;
+}
+
+.back-home-button a {
+  background: #15aabf;
+  color: white;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.forward-section a:hover {
+  opacity: 0.7;
+  transition: all 180ms ease-in-out;
+}
+
+.grid-4-columns-footer {
+  grid-gap: 0;
+  grid-template-columns: auto 800px auto auto;
+}
+
+.footer-section li {
   display: inline;
   font-size: 30px;
   list-style: none;
@@ -232,82 +250,85 @@ footer li {
   padding: 0;
 }
 
-footer a {
+.footer-section .shecodes-icon {
+  margin-right: 0;
+}
+
+.footer-section ul {
+  margin-left: 40px;
+  padding: 0;
+}
+
+.footer-section p {
+  font-size: 18px;
+  padding-top: 5px;
+  text-align: left;
+}
+
+.footer-section a {
   color: #15aabf;
   text-decoration: none;
 }
 
-footer .shecodes-icon {
-  margin-right: 0;
+.footer-section h3 {
+  color: #15aabf;
+  display: flex;
+  font-size: 20px;
+  justify-content: right;
+  padding-top: 5px;
 }
+
+.footer-section h2 {
+  margin-left: 30px;
+  text-align: center;
+}
+
 /* END OF THE FOOTER SECTION */
 
 /* MEDIA QUERY */
-
 @media (max-width: 960px) {
-  header {
-    padding-bottom: 0;
+  main {
+    padding: 10px;
   }
 
-  .grid {
-    grid-gap: 12px;
-    grid-template-columns: 1fr;
-    padding: 0;
-  }
-
-  .form-section {
-    flex-direction: column;
-  }
-
-  .form-introduction-message {
-    padding: 15px;
-    margin: 20px 5px 0 5px;
-  }
-
-  .form-introduction-message h1 {
-    font-size: 32px;
-    margin: 0 0 16px 0;
-    text-align: center;
-  }
-
-  .form-introduction-message p {
-    font-size: 14px;
-    text-align: justify;
-  }
-
-  .form-section form {
-    height: 500px;
-  }
-
-  .form-box-message {
-    margin: 0 10px;
-  }
-
-  .form-group {
+  .grid .contact-message {
+    padding: 10px;
     margin: 10px;
   }
 
-  input {
-    margin-top: 10px;
-    width: 300px;
-    height: 20px;
+  .grid .contact-form {
+    padding: 20px;
+    margin: 30px;
   }
 
-  label {
+  .grid .contact-message h1 {
+    font-size: 28px;
+  }
+
+  .grid .contact-message p {
     font-size: 15px;
-  }
-
-  textarea {
-    margin-top: 10px;
-    width: 300px;
-  }
-
-  button {
-    width: 300px;
   }
 
   .grid-2-columns {
     grid-template-columns: 1fr;
+    grid-gap: 0;
+    margin: 0;
+  }
+
+  nav {
+    font-size: 15px;
+  }
+
+  .nav-link-left {
+    padding-left: 20px;
+  }
+
+  .nav-link-right {
+    padding-right: 20px;
+  }
+
+  .nav-link-right li {
+    margin-left: 10px;
   }
 
   .footer-section p {
@@ -336,23 +357,8 @@ footer .shecodes-icon {
     grid-template-columns: 1fr;
   }
 
-  nav {
-    padding: 10px 0;
-  }
-
-  .nav-link-left {
-    font-size: 12px;
-    margin-left: 5px;
-    padding-left: 0;
-  }
-
-  .nav-link-right {
-    font-size: 12px;
-    margin-right: 5px;
-    padding-right: 0;
-  }
-
-  .nav-link-right li {
-    margin-left: 10px;
+  .grid {
+    grid-gap: 12px;
+    grid-template-columns: 1fr;
   }
 }
