@@ -87,7 +87,6 @@ nav ul {
 /* END OF THE NAV BAR */
 
 /* BEGIN OF THE THANKS SECTION*/
-
 .thanks-section {
   align-items: center;
   background-color: #e5deda;
@@ -142,6 +141,7 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-size: 500px;
+
   /*  */
   background-image: linear-gradient(
       rgba(249, 247, 244, 0.92),
@@ -150,65 +150,42 @@ footer {
     url("./images/leaves.jpg");
 }
 
-footer h3 {
-  color: #15aabf;
-  display: flex;
-  font-size: 18px;
-  font-weight: 700;
-  justify-content: right;
-  line-height: 1.5;
-  padding-top: 5px;
-}
-
-footer p {
-  margin-top: 20px;
-  color: #a14867;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.5;
-  opacity: 0.7;
-}
-
-footer ul {
-  padding: 0;
-}
-
-footer li {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-footer a {
-  color: #c06f8c;
-}
-
-.back-home-button a {
-  background: #15aabf;
-  color: white;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  line-height: 1.5;
-  margin: 0;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-.forward-section a:hover {
-  opacity: 0.7;
-  transition: all 180ms ease-in-out;
-}
-
 .grid-4-columns-footer {
   grid-gap: 0;
   grid-template-columns: auto 800px auto auto;
 }
 
-.footer-section li {
+footer p {
+  color: #a14867;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+  opacity: 0.7;
+  padding-top: 5px;
+  text-align: left;
+}
+
+footer h3 {
+  color: #15aabf;
+  display: flex;
+  font-size: 20px;
+  justify-content: right;
+  line-height: 1.5;
+  padding-top: 5px;
+}
+
+footer h2 {
+  margin-left: 30px;
+  text-align: center;
+}
+
+footer ul {
+  padding: 0;
+  margin-left: 40px;
+}
+
+footer li {
   display: inline;
   font-size: 30px;
   list-style: none;
@@ -216,39 +193,14 @@ footer a {
   padding: 0;
 }
 
-.footer-section .shecodes-icon {
-  margin-right: 0;
-}
-
-.footer-section ul {
-  margin-left: 40px;
-  padding: 0;
-}
-
-.footer-section p {
-  font-size: 18px;
-  padding-top: 5px;
-  text-align: left;
-}
-
-.footer-section a {
+footer a {
   color: #15aabf;
   text-decoration: none;
 }
 
-.footer-section h3 {
-  color: #15aabf;
-  display: flex;
-  font-size: 20px;
-  justify-content: right;
-  padding-top: 5px;
+footer .shecodes-icon {
+  margin-right: 0;
 }
-
-.footer-section h2 {
-  margin-left: 30px;
-  text-align: center;
-}
-
 /* END OF THE FOOTER SECTION */
 
 @media (max-width: 960px) {
@@ -338,6 +290,6 @@ footer a {
   }
 
   section {
-    padding: 30px;
+    padding: 20px;
   }
 }
