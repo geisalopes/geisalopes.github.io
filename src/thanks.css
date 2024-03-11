@@ -10,6 +10,32 @@ body {
   max-width: 100%;
 }
 
+section {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* The main here involves the 2-column grid div, so you can change its color and size, separate from the grid */
+main {
+  background-color: #e5deda;
+  padding: 40px 0;
+}
+
 /* BEGIN OF THE NAV BAR */
 nav {
   background-color: #f9f7f4;
@@ -62,20 +88,20 @@ nav ul {
 
 /* BEGIN OF THE THANKS SECTION*/
 
-section {
-  background-color: #e5deda;
+.thanks-section {
   align-items: center;
+  background-color: #e5deda;
   padding: 200px 45px;
 }
 
 .thanks-section h1 {
   color: #af2858;
+  font-family: "Nunito Sans", sans-serif;
   font-size: 48px;
   font-weight: 700;
   line-height: 1.5;
   margin: 0;
   text-align: center;
-  font-family: "Nunito Sans", sans-serif;
 }
 
 .thanks-section p {
@@ -86,28 +112,230 @@ section {
 }
 
 .thanks-button {
-  margin-top: 50px;
-  justify-content: center;
   display: flex;
+  justify-content: center;
+  margin-top: 50px;
 }
 
 button {
   background: #15aabf;
+  border: none;
   color: white;
   font-size: 14px;
   font-weight: 700;
   letter-spacing: 2px;
   line-height: 1.5;
-  padding: 12px;
+  padding: 20px;
   text-align: center;
   text-transform: uppercase;
-  border: none;
-  padding: 20px;
 }
 
 button a {
-  text-decoration: none;
   color: #f9f7f4;
+  text-decoration: none;
+}
+/* END OF THE THANKS SECTION*/
+
+/* BEGIN OF THE FOOTER SECTION */
+footer {
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 500px;
+  /*  */
+  background-image: linear-gradient(
+      rgba(249, 247, 244, 0.92),
+      rgba(249, 247, 244, 0.9)
+    ),
+    url("./images/leaves.jpg");
 }
 
-/* END OF THE THANKS SECTION*/
+footer h3 {
+  color: #15aabf;
+  display: flex;
+  font-size: 18px;
+  font-weight: 700;
+  justify-content: right;
+  line-height: 1.5;
+  padding-top: 5px;
+}
+
+footer p {
+  margin-top: 20px;
+  color: #a14867;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.5;
+  opacity: 0.7;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer a {
+  color: #c06f8c;
+}
+
+.back-home-button a {
+  background: #15aabf;
+  color: white;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.forward-section a:hover {
+  opacity: 0.7;
+  transition: all 180ms ease-in-out;
+}
+
+.grid-4-columns-footer {
+  grid-gap: 0;
+  grid-template-columns: auto 800px auto auto;
+}
+
+.footer-section li {
+  display: inline;
+  font-size: 30px;
+  list-style: none;
+  margin-right: 40px;
+  padding: 0;
+}
+
+.footer-section .shecodes-icon {
+  margin-right: 0;
+}
+
+.footer-section ul {
+  margin-left: 40px;
+  padding: 0;
+}
+
+.footer-section p {
+  font-size: 18px;
+  padding-top: 5px;
+  text-align: left;
+}
+
+.footer-section a {
+  color: #15aabf;
+  text-decoration: none;
+}
+
+.footer-section h3 {
+  color: #15aabf;
+  display: flex;
+  font-size: 20px;
+  justify-content: right;
+  padding-top: 5px;
+}
+
+.footer-section h2 {
+  margin-left: 30px;
+  text-align: center;
+}
+
+/* END OF THE FOOTER SECTION */
+
+@media (max-width: 960px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  main {
+    padding: 100px 30px;
+  }
+
+  .thanks-section {
+    padding: 0;
+  }
+
+  .thanks-section h1 {
+    font-size: 30px;
+    padding: 20px 10px;
+  }
+
+  .thanks-section p {
+    font-size: 20px;
+    margin: 0;
+    padding: 0 25px;
+  }
+
+  .thanks-button {
+    margin-top: 30px;
+  }
+  button {
+    font-size: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  nav {
+    padding: 15px 0;
+  }
+
+  .nav-link-left {
+    font-size: 12px;
+    margin-left: 15px;
+    padding-left: 0;
+  }
+
+  .nav-link-right {
+    font-size: 12px;
+    margin-right: 20px;
+    padding-right: 0;
+  }
+
+  .nav-link-right li {
+    margin-left: 10px;
+  }
+
+  .footer-section p {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .footer-section h3 {
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .footer-section h2 {
+    display: none;
+  }
+
+  .footer-section ul {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .grid-4-columns-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    grid-gap: 12px;
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 30px;
+  }
+}

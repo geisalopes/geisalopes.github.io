@@ -36,12 +36,6 @@ main {
   padding: 40px 0;
 }
 
-section {
-  margin: 0 auto;
-  max-width: 100%;
-  padding: 30px;
-}
-
 /* BEGIN OF THE NAV BAR */
 nav {
   background-color: #f9f7f4;
