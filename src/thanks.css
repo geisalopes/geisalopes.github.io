@@ -257,7 +257,7 @@ footer a {
   }
 
   main {
-    padding: 100px 30px;
+    padding: 10px;
   }
 
   .thanks-section {
@@ -278,6 +278,7 @@ footer a {
   .thanks-button {
     margin-top: 30px;
   }
+
   button {
     font-size: 12px;
     padding: 15px;
