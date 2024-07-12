@@ -36,6 +36,7 @@ nav {
   font-size: 20px;
   padding: 20px 0;
   width: 100%;
+  position: fixed;
 }
 
 nav a {
@@ -197,19 +198,33 @@ main p {
   margin: 50px 0 0 50px;
 }
 
-.my-portfolio-container p {
+.my-portfolio-container h4 {
+  font-size: 20px;
+  margin-bottom: 25px;
+  padding-left: 30px;
+  text-align: left;
+}
+
+.my-portfolio-container .portfolio-subtitle {
   margin: 0 0 50px 50px;
 }
 
+.my-portfolio-container .project-description {
+  margin-bottom: 50px;
+  font-size: 15px;
+  padding-left: 30px;
+  text-align: left;
+}
+
 /* Create a line below the text ::after*/
-.my-portfolio-container p::after {
+/* .my-portfolio-container p::after {
   background-color: black;
   content: "";
   display: block;
   height: 3px;
   margin-top: 30px;
   width: 8%;
-}
+} */
 
 .grid-3-columns-my-projects {
   grid-gap: 0;
@@ -224,11 +239,6 @@ main p {
   max-height: 90%;
   max-width: 90%;
   object-fit: cover;
-}
-
-.my-portfolio-container h4 {
-  font-size: 20px;
-  margin-bottom: 50px;
 }
 
 .project-title {
