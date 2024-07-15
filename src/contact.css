@@ -42,6 +42,7 @@ nav {
   font-size: 20px;
   padding: 20px 0;
   width: 100%;
+  position: fixed;
 }
 
 nav a {
@@ -99,7 +100,7 @@ nav ul {
 
 .grid .contact-message h1 {
   color: #af2858;
-  font-size: 58px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 1.5;
   margin: 0;
