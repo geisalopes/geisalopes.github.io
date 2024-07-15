@@ -195,14 +195,14 @@ a.puter-website:hover {
 }
 
 /* Create a line below the text using ::after*/
-.my-projects-section p::after {
+/* .my-projects-section p::after {
   background-color: black;
   content: "";
   display: block;
   height: 3px;
   margin-top: 30px;
   width: 8%;
-}
+} */
 
 .grid-2-columns-my-projects {
   grid-gap: 0;
@@ -251,14 +251,14 @@ a.puter-website:hover {
   margin: 40px 0 70px 100px;
 }
 
-.certifications-section h2::after {
+/* .certifications-section h2::after {
   background-color: black;
   content: "";
   display: block;
   height: 3px;
   margin-top: 30px;
   width: 8%;
-}
+} */
 
 .grid-3-columns-my-certifications {
   grid-gap: 0;
