@@ -1,0 +1,331 @@
+body {
+  background-color: #f9f7f4;
+  font-family: "Poppins", sans-serif;
+  margin: 0 auto;
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+section {
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 12px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/*BEGIN OF THE MAIN SECTION*/
+
+/* The main here involves the 2-column grid div, so you can change its color and size, separate from the grid */
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e5deda;
+  padding: 40px 0;
+}
+
+a {
+  color: #af2858;
+}
+
+h1 {
+  color: #af2858;
+}
+
+/* Wrapper para agrupar as caixas de imagem e texto*/
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/*Caixa para a imagem e o texto com moldura*/
+.image-text-box {
+  border: 2px solid #a19797; /* Cor da moldura */
+  padding: 50px; /* Espaçamento interno */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 500px; /* Ajuste conforme necessário */
+  margin-bottom: -1px; /* Remove a "grosseria" das bordas entre as caixas */
+}
+
+.image-text-box:first-child {
+  margin-top: 100px;
+}
+
+/* Estiliza a imagem */
+.image-container {
+  max-width: 500px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.project-description {
+  font-size: 18px;
+  color: #333;
+  display: inline;
+  padding: 0 0 50px 0;
+  margin: 0;
+}
+
+.image-text-box:last-of-type {
+  padding-bottom: 0;
+}
+
+main ul {
+  padding: 0;
+  margin-left: 40px;
+}
+
+main li {
+  display: inline;
+  font-size: 25px;
+  list-style: none;
+  margin-right: 40px;
+  padding: 0;
+  color: #333;
+}
+
+.zoom-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.image-container {
+  display: block;
+  width: 100%;
+  transition: transform 0.3s ease;
+}
+
+/* END OF THE MAIN SECTION*/
+
+/* BEGIN OF THE NAV BAR */
+nav {
+  background-color: #f9f7f4;
+  font-size: 20px;
+  padding: 20px 0;
+  width: 100%;
+  position: fixed;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link-left {
+  padding-left: 70px;
+}
+
+.nav-link-left a {
+  color: black;
+}
+
+.nav-link-left a:hover {
+  color: #15aabf;
+}
+
+.nav-link-right {
+  display: flex;
+  margin-left: auto;
+  padding-right: 70px;
+}
+
+.nav-link-right a {
+  color: #15aabf;
+}
+
+.nav-link-right a:hover {
+  color: #af2858;
+}
+
+.nav-link-right li {
+  margin-left: 20px;
+}
+/* END OF THE NAV BAR */
+
+/* BEGIN OF THE FOOTER SECTION */
+footer {
+  background-position-y: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: 500px;
+
+  /*  */
+  background-image: linear-gradient(
+      rgba(249, 247, 244, 0.92),
+      rgba(249, 247, 244, 0.9)
+    ),
+    url("./images/leaves.jpg");
+}
+
+.grid-4-columns-footer {
+  grid-gap: 0;
+  grid-template-columns: auto 800px auto auto;
+}
+
+footer p {
+  color: #a14867;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 1.5;
+  opacity: 0.7;
+  padding-top: 5px;
+  text-align: left;
+}
+
+footer h3 {
+  color: #15aabf;
+  display: flex;
+  font-size: 20px;
+  justify-content: right;
+  line-height: 1.5;
+  padding-top: 5px;
+}
+
+footer h2 {
+  margin-left: 30px;
+  text-align: center;
+  color: #6b6a6a;
+}
+
+footer ul {
+  padding: 0;
+  margin-left: 40px;
+}
+
+footer li {
+  display: inline;
+  font-size: 30px;
+  list-style: none;
+  margin-right: 40px;
+  padding: 0;
+}
+
+footer a {
+  color: #15aabf;
+  text-decoration: none;
+}
+
+footer .shecodes-icon {
+  margin-right: 0;
+}
+/* END OF THE FOOTER SECTION */
+
+@media (max-width: 960px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  main {
+    padding: 10px;
+  }
+
+  .thanks-section {
+    padding: 0;
+    margin: 100px auto;
+  }
+
+  .thanks-section h1 {
+    font-size: 30px;
+    padding: 20px 10px;
+  }
+
+  .thanks-section p {
+    font-size: 20px;
+    margin: 0;
+    padding: 0 25px;
+  }
+
+  .thanks-button {
+    margin-top: 30px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  nav {
+    padding: 15px 0;
+  }
+
+  .nav-link-left {
+    font-size: 12px;
+    margin-left: 15px;
+    padding-left: 0;
+  }
+
+  .nav-link-right {
+    font-size: 12px;
+    margin-right: 20px;
+    padding-right: 0;
+  }
+
+  .nav-link-right li {
+    margin-left: 10px;
+  }
+
+  .footer-section p {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+
+  .footer-section h3 {
+    font-size: 18px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .footer-section h2 {
+    display: none;
+  }
+
+  .footer-section ul {
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .grid-4-columns-footer {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    grid-gap: 12px;
+    grid-template-columns: 1fr;
+  }
+
+  section {
+    padding: 20px;
+  }
+}

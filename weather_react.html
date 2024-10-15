@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/weather_react.css" />
+    <script
+      src="https://kit.fontawesome.com/0e35a62c2d.js"
+      crossorigin="anonymous"
+    ></script>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Weather Now</title>
+      </head>
+      <body>
+        <div class="container">
+          <nav>
+            <ul>
+              <div class="nav-link-left">
+                <li><a href="index.html">Home</a></li>
+              </div>
+              <div class="nav-link-right">
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </div>
+            </ul>
+          </nav>
+          <main>
+            <div class="content-wrapper">
+              <div class="image-text-box">
+                <h1>Weather Now</h1>
+                <p class="project-description">
+                  Weather Now is an intuitive app that delivers real-time
+                  weather updates and a 5-day forecast for any location. Whether
+                  you're planning your week or checking today’s conditions,
+                  Weather Now makes it simple to stay informed, no matter where
+                  you are.
+                </p>
+                <a
+                  href="https://react-weather-prjct.netlify.app/"
+                  target="_blank"
+                  >Visit the page</a
+                >
+              </div>
+              <div class="image-text-box">
+                <p class="project-description">
+                  With Weather Now, you can search for weather updates in any
+                  city or rely on automatic location detection for instant
+                  information. The app offers detailed forecasts with minimal
+                  input, allowing users to receive accurate and up-to-date
+                  weather information in a clean, easy-to-use interface.
+                </p>
+                <img
+                  class="image-container"
+                  src="src/images/WR02.png"
+                  alt="Weather Now Page"
+                />
+              </div>
+              <div class="image-text-box">
+                <ul>
+                  <li><i class="fa-brands fa-html5"></i></li>
+                  <li><i class="fa-brands fa-css3-alt"></i></li>
+                  <li><i class="fa-brands fa-js"></i></li>
+                  <li><i class="fa-brands fa-react"></i></li>
+                </ul>
+                <p class="project-description">
+                  Weather Now is developed using React, integrating a weather
+                  API for real-time data and geolocation services for automatic
+                  location detection. HTML and CSS ensure the app's responsive
+                  design, while JavaScript powers its interactivity, delivering
+                  a smooth and reliable experience across all devices.
+                </p>
+              </div>
+            </div>
+          </main>
+          <footer>
+            <a name="contact-me"></a>
+            <section class="footer-section">
+              <div class="grid grid-4-columns-footer">
+                <p class="geisa-lopes-year">
+                  © Geisa Lopes - <span id="year">2024</span>
+                </p>
+                <h3>You can also find me here</h3>
+                <h2>|</h2>
+                <ul>
+                  <li>
+                    <a href="mailto:geisa.lopes@icloud.com" target="_blank"
+                      ><i class="fa-solid fa-envelope email"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.linkedin.com/in/geisa-lopes/"
+                      target="_blank"
+                      ><i class="fab fa-linkedin linkedin"></i
+                    ></a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/geisalopes" target="_blank"
+                      ><i class="fa-brands fa-github"></i
+                    ></a>
+                  </li>
+                  <li class="shecodes-icon">
+                    <a
+                      href="https://www.shecodes.io/graduates/89118-geisa-lopes"
+                      target="_blank"
+                      ><i class="fa-solid fa-laptop-code"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </section>
+          </footer>
+        </div>
+        <script>
+          const yearElement = document.getElementById("year");
+          const currentYear = new Date().getFullYear();
+          yearElement.textContent = currentYear;
+        </script>
+      </body>
+    </html>
+  </head>
+</html>
