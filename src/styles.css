@@ -161,7 +161,7 @@ main p {
 }
 
 .about-me-container {
-  padding: 100px 50px 0 50px;
+  padding: 30px 50px 30px 50px;
 }
 
 .about-me-container a {
@@ -258,7 +258,7 @@ main p {
 }
 
 .forward-container h2 {
-  font-size: 48px;
+  font-size: 38px;
   margin-bottom: 10px;
 }
 
@@ -268,6 +268,11 @@ main p {
   line-height: 1.5;
   margin: 0 200px 50px 200px;
   padding: 0 100px;
+}
+
+.forward-container p {
+  font-size: 22px;
+  padding: 20px 400px;
 }
 
 .forward-container a {

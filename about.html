@@ -42,15 +42,18 @@
           <div class="about-me-section">
             <h1>Geisa Lopes</h1>
             <p>
-              I'm a human resources professional who recently discovered a new
-              passion: <span class="colored-word">coding</span>. <br />
-              Having lived in Berlin for almost five years, I have a deep
-              appreciation for the city's vibrant tech scene. My move to another
-              country marked a crucial moment in my journey to explore a career
-              change. As a frontend development student, I am immersed in
-              learning HTML, CSS, and JavaScript, navigating the intricacies of
-              creating functional, visually pleasing, and user-friendly
-              websites.
+              Based in Berlin, I’m a front-end developer passionate about
+              turning ideas into functional and engaging digital experiences.
+              After transitioning from a career in human resources, I discovered
+              my love for coding and dove into web development, specializing in
+              crafting high-conversion landing pages with HTML, CSS, and
+              JavaScript.
+            </p>
+            <p>
+              "For nearly five years, I’ve embraced Berlin’s vibrant tech
+              ecosystem, drawing inspiration from its innovative spirit. My
+              journey is driven by a passion for creating digital experiences
+              that solve real-world problems and bring ideas to life."
             </p>
             <div class="back-home-button">
               <a href="index.html">back to home</a>
@@ -61,7 +64,7 @@
               <img
                 class="img-geisa-lopes"
                 src="src/images/geisa_museum.jpg"
-                alt="Geisa Lopes"
+                alt="Geisa Lopes Profile Picture"
               />
             </div>
           </div>
@@ -72,12 +75,13 @@
         <section class="my-projects-section">
           <h2>My Projects</h2>
           <p>
-            I recently developed two apps for
+            I had the opportunity to develop two applications for
             <a href="https://puter.com/" target="_blank" class="puter-website"
               >Puter</a
-            >: a weather and a dictionary app. Both are already running and the
-            number of users is growing a little every day. You can check them
-            below.
+            >: a weather app and a dictionary app. Both are fully functional and
+            live, with a growing user base every day. Feel free to explore them
+            below and see how they bring value to users through practical and
+            intuitive design.
           </p>
           <div class="grid grid-2-columns-my-projects grid-projects">
             <div class="grid-item-weather">
@@ -111,6 +115,14 @@
 
         <section class="certifications-section">
           <h2>Certifications</h2>
+          <p class="certification-subtitle">
+            The certifications below reflect my commitment to continuous
+            learning and my dedication to achieving excellence in web
+            development. They showcase my expertise in Frontend, React, and
+            responsive web development, focusing on creating high-quality
+            digital experiences. Click on each certification to learn more about
+            the process and the skills acquired.
+          </p>
           <div
             class="grid grid-3-columns-my-certifications grid-certifications"
           >
@@ -119,11 +131,13 @@
                 href="https://www.shecodes.io/graduates/89118-geisa-lopes"
                 target="_blank"
                 class="certification-title"
-                ><img
-                  src="src/images/cert-frontend-dev.png"
+              >
+                <img
+                  src="src/images/certf-advanced-responsive-webdev.png"
                   alt="Frontend Certification"
                   class="certification-img"
                 />
+                <h4>Advanced Responsive Web Development</h4>
               </a>
             </div>
             <div class="grid-item">
@@ -131,11 +145,13 @@
                 href="https://www.shecodes.io/graduates/89118-geisa-lopes"
                 target="_blank"
                 class="certification-title"
-                ><img
-                  src="src/images/cert-react-webdev.png"
+              >
+                <img
+                  src="src/images/certf-python-introduction.png"
                   alt="React Certification"
                   class="certification-img"
                 />
+                <h4>Introduction to Python Development</h4>
               </a>
             </div>
             <div class="grid-item">
@@ -143,24 +159,27 @@
                 href="https://www.shecodes.io/graduates/89118-geisa-lopes"
                 target="_blank"
                 class="certification-title"
-                ><img
-                  src="src/images/cert-responsive-webdev.png"
+              >
+                <img
+                  src="src/images/certf-introduction_ai.png"
                   alt="Responsive Certification"
                   class="certification-img"
                 />
+                <h4>Introduction to Artifical Intelligence</h4>
               </a>
             </div>
           </div>
         </section>
+
         <section class="grid grid-2-columns-jogging">
           <div class="jogging-container">
             <h2>When not coding...</h2>
             <p>
               One of the best things that happened to me when I moved to Berlin
               was discovering my passion for running, especially in parks. Being
-              able to enjoy nature, the animals, the people walking around. I
-              find it wonderful to exercise while enjoying the attractions
-              around me.
+              able to enjoy nature, the animals, and the people around me is
+              such a joy. I find it wonderful to exercise while taking in the
+              sights and sounds of the world around me.
             </p>
           </div>
           <div class="jogging-center-image">
@@ -181,10 +200,11 @@
           </div>
           <div class="hobbies-container">
             <p>
-              I like to travel and get to know new cities in Germany, but my
-              favorite activity is walking around Berlin, visiting museums,
-              bookshops, parks and a vegan café I haven't been to yet. Berlin is
-              a huge city and there will always be something new to discover.
+              I love to travel and explore new cities in Germany, but my
+              favorite activity is walking around Berlin. I enjoy visiting
+              museums, bookshops, parks, and searching for new vegan cafés I
+              haven't yet discovered. Berlin is such a vast city, and there will
+              always be something new to experience.
             </p>
           </div>
         </section>
@@ -244,9 +264,7 @@
       </footer>
     </div>
     <script>
-      const yearElement = document.getElementById("year");
-      const currentYear = new Date().getFullYear();
-      yearElement.textContent = currentYear;
+      document.getElementById("year").textContent = new Date().getFullYear();
     </script>
   </body>
 </html>

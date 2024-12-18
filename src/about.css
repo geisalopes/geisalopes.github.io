@@ -240,15 +240,29 @@ a.puter-website:hover {
 /* BEGIN OF THE CERTIFICATIONS SECTION - NOT FINISHED YET*/
 .certifications-section {
   background-color: #f0eae7;
-  padding-bottom: 100px;
 }
 
 .certifications-section h2 {
   color: #af2858;
-  font-size: 42px;
+  font-size: 38px;
   font-weight: 700;
   line-height: 1.5;
-  margin: 40px 0 70px 100px;
+  margin: 50px 0 0 50px;
+}
+
+.certification-title {
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.certification-title:hover {
+  color: #af2858;
+  text-decoration: none;
+}
+
+.certifications-section .certification-subtitle {
+  margin: 0 0 50px 50px;
 }
 
 /* .certifications-section h2::after {
@@ -307,7 +321,7 @@ a.puter-website:hover {
 }
 
 .jogging-container {
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .jogging-container h2 {
